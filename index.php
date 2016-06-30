@@ -13,7 +13,7 @@ switch ($rubrique) {
 	case 'accueil':
 	{
 		$title = "Accueil";
-		$content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nostrum hic omnis culpa possimus quaerat. Dolor facilis hic pariatur a incidunt, et placeat unde vel minima, aliquam rem voluptate atque.";
+		$content = file_get_contents('src/contenu.txt');
 	}
 		break;
 
