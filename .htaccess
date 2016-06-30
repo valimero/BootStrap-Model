@@ -1,0 +1,13 @@
+
+RewriteEngine On
+
+#RewriteRule ^index.html$ index.php?rubrique=index
+#RewriteRule ^actus.html$ index.php?rubrique=actus
+#RewriteRule ^blog.html$ index.php?rubrique=blog
+#RewriteRule ^equipe.html$ index.php?rubrique=equipe
+#RewriteRule ^contacts.html$ index.php?rubrique=contacts
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.*)$ index.php?rubrique=$1 [PT,L,QSA]
