@@ -1,0 +1,4 @@
+AuthName "Page d'administration protegee"
+AuthType Basic
+AuthUserFile "/Users/stagiaire/Desktop/htdocs/php/regis/rewrite/admin/.htpasswd"
+Require valid-user
